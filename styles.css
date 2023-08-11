@@ -96,9 +96,9 @@ p {
 
 .overlay {
   position: absolute;
+  border-radius: 10px;
   top: 0;
   display: flex;
-  border: solid red 1px;
   justify-content: center;
   align-items: center;
   width: 100%;
