@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  font-family: 'Outfit', sans-serif;
+  display: grid;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: var(--main-bg);
+}
+
+h1 {
+  font-size: 1.3rem;
+  color: var(--white);
+  font-weight: 400;
+  letter-spacing: 1.1px;
+  padding: 1.4rem 0;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: var(--soft-blue);
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.card {
+  margin: auto;
+  width: 350px;
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px hsl(216, 50%, 8%);
+}
+
+.card img:hover {
+  cursor: pointer;
+}
+
+.coin {
+  text-transform: uppercase;
+  color: var(--cyan);
+}
+
+.coin img {
+  display: inline-block;
+  height: 16px;
+  width: 10px;
+  margin-right: 0.5rem;
+}
+
+.time-container {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 10% 90%;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  justify-content: end;
+}
+
+.coin-data {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.time {
+  color: var(--soft-blue);
+  font-weight: 300;
+}
+
+.time img {
+  display: inline-block;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--line);
+  padding: 1.2rem 0 0.4rem;
+}
+
+footer img {
+  max-width: 30px;
+  border-radius: 50%;
+  border: solid 1px var(--white);
+  margin-right: 1rem;
+}
+
+footer span {
+  color: var(--white);
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--cyan);
+}
+
+.attribution {
+  color: var(--white);
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+}
